@@ -1,8 +1,8 @@
-import { MediaPressetProps } from '@tok/generation/components/Media';
+import { MediaPresetProps } from '@tok/generation/components/Media';
 
 export type ListItemProps = {
   text: string;
-  media?: MediaPressetProps;
+  media?: MediaPresetProps;
 };
 
 export const ListItemDefaultProps = {

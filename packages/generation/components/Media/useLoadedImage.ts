@@ -1,7 +1,7 @@
 import { MaybeComputedRef, resolveRef } from '@tok/ui/types';
 import { computed, ref, watch } from 'vue';
 
-import { _MediaLoader } from './Media.presset.props';
+import { _MediaLoader } from './Media.preset.props';
 
 export function useLoadedImage(
   src: MaybeComputedRef<_MediaLoader<any> | string | undefined> = ''

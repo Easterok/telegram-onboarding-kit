@@ -1,6 +1,6 @@
 import '@tok/ui/styles/global.scss';
 
-import { DefinePressetsPlugin } from '@tok/generation/plugins/definePressets';
+import { DefinePresetsPlugin } from '@tok/generation/plugins/definePresets';
 import { FormStatePlugin } from '@tok/generation/plugins/formState';
 import { ThemePlugin } from '@tok/generation/plugins/theme';
 import { TokI18nPlugin } from '@tok/i18n';
@@ -32,7 +32,7 @@ export function bootstrap<T extends BootstrapConfig<any>>(
   const pages = config.pages.map((config, index) => {
     return {
       path: index === 0 ? '/' : config.path || `/${index}`,
-      component: () => import('@tok/generation/pressets/Route.vue'),
+      component: () => import('@tok/generation/presets/Route.vue'),
       meta: {
         config,
       },
@@ -72,7 +72,7 @@ export function bootstrap<T extends BootstrapConfig<any>>(
     .use(TokI18nPlugin, i18nOptions)
     .use(ThemePlugin, config.theme || 'auto')
     .use(FormStatePlugin)
-    .use(DefinePressetsPlugin, config.definePressets || {})
+    .use(DefinePresetsPlugin, config.definePresets || {})
     .use(CurrencyPlugin, config.currencyConfig || {})
     .mount('#app');
 }

@@ -13,14 +13,14 @@
 <script setup lang="ts">
 import { computed, defineAsyncComponent, ref, toRefs, watch } from 'vue';
 
-import { StickerPressetProps } from './Media.presset.props';
+import type { StickerPresetProps } from './Media.preset.props';
 
 // We have to do it this way because Lottie-web's bundled size is around 80kb
 const TelegramSticker = defineAsyncComponent(() =>
   import('@tok/telegram-ui/components/Sticker').then((m) => m.Sticker)
 );
 
-const props = withDefaults(defineProps<StickerPressetProps>(), {
+const props = withDefaults(defineProps<StickerPresetProps>(), {
   src: null,
 });
 

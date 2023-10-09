@@ -1,5 +1,5 @@
 <template>
-  <slide-presset v-bind="props" :button="null">
+  <slide-preset v-bind="props" :button="null">
     <slot />
 
     <div :class="[$style.links, $style['links_' + props.shape]]">
@@ -19,12 +19,12 @@
       :text="mainButtonComputedText"
       @on-click="onSubmit"
     />
-  </slide-presset>
+  </slide-preset>
 </template>
 
 <script setup lang="ts">
 import { PaywallPopup } from '@tok/generation/components/PaywallPopup';
-import { SlidePresset } from '@tok/generation/pressets/slide';
+import { SlidePreset } from '@tok/generation/presets/slide';
 import { FORM_STATE_TOKEN } from '@tok/generation/tokens';
 import { useCarousel } from '@tok/generation/use/carousel';
 import { useI18n } from '@tok/i18n';

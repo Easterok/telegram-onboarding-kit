@@ -1,13 +1,13 @@
 <template>
   <li :class="$style.li">
-    <media-presset v-if="media" v-bind="media" static :class="$style.media" />
+    <media-preset v-if="media" v-bind="media" static :class="$style.media" />
 
     <span v-html="translatedText" />
   </li>
 </template>
 
 <script setup lang="ts">
-import { MediaPresset } from '@tok/generation/components/Media';
+import { MediaPreset } from '@tok/generation/components/Media';
 import { useI18n } from '@tok/i18n';
 import { toRefs } from 'vue';
 

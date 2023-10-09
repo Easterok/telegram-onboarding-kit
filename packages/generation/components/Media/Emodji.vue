@@ -7,9 +7,9 @@
 <script setup lang="ts">
 import { computed, toRefs } from 'vue';
 
-import { EmodjiPressetProps } from './Media.presset.props';
+import type { EmodjiPresetProps } from './Media.preset.props';
 
-const props = defineProps<EmodjiPressetProps>();
+const props = defineProps<EmodjiPresetProps>();
 
 const { size } = toRefs(props);
 

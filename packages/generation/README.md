@@ -3,7 +3,7 @@
 The primary package for generating projects via a configuration file. It offers presets that can be easily extended within the configuration file.
 
 1. [Components](./components/README.md)
-2. [Pressets](./pressets/README.md)
+2. [Presets](./presets/README.md)
 3. [Plugins](./plugins/README.md)
 4. [Tokens](./tokens/README.md)
 5. [Use](./use/README.md)

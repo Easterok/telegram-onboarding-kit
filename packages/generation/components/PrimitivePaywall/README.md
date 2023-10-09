@@ -3,8 +3,8 @@
 > [!NOTE]
 > This component is only intended for use with [bootstrap.ts](../../bootstrap.ts).
 
-1. This component extends the [Slide.presset](../../pressets/slide/README.md) component.
-2. It overrides the default behavior of the MainButton inside the [Slide.presset](../../pressets/slide/README.md) component.
+1. This component extends the [Slide.preset](../../presets/slide/README.md) component.
+2. It overrides the default behavior of the MainButton inside the [Slide.preset](../../presets/slide/README.md) component.
 3. It manages the MainButton with its own logic, including:
    - Translating the mainButtonText.
    - Replacing {price} inside the mainButtonText.

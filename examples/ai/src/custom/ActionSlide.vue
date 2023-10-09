@@ -1,5 +1,5 @@
 <template>
-  <slide-presset
+  <slide-preset
     v-bind="props"
     pagination="count"
     shape="stacked"
@@ -27,15 +27,12 @@
         {{ translatedNext }}
       </flat-button>
     </div>
-  </slide-presset>
+  </slide-preset>
 </template>
 
 <script setup lang="ts">
-import type { MediaPressetProps } from '@tok/generation/components/Media';
-import {
-  SlidePresset,
-  SlidePressetProps,
-} from '@tok/generation/pressets/slide';
+import type { MediaPresetProps } from '@tok/generation/components/Media';
+import { SlidePreset, SlidePresetProps } from '@tok/generation/presets/slide';
 import { useCarousel } from '@tok/generation/use/carousel';
 import { useI18n } from '@tok/i18n';
 import { FlatButton, FlatButtonProps } from '@tok/ui/components/FlatButton';
@@ -43,12 +40,12 @@ import { CUSTOM_ICONS_TOKEN } from '@tok/ui/tokens';
 import { computed, defineAsyncComponent, provide, ref, toRefs } from 'vue';
 
 type Props = Omit<
-  SlidePressetProps,
+  SlidePresetProps,
   'media' | 'button' | 'buttonAfterContent' | 'shape' | 'pagination'
 > & {
   actionButton: [string, string];
   nextButton: string | (FlatButtonProps & { content: string });
-  media: [MediaPressetProps, MediaPressetProps];
+  media: [MediaPresetProps, MediaPresetProps];
 };
 
 const props = defineProps<Props>();

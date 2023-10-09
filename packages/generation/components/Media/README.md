@@ -5,7 +5,7 @@
 
 This component supports 5 different types of media:
 
-1. [Video](./VideoPresset.vue)
+1. [Video](./VideoPreset.vue)
 2. [Image](./Image.vue)
 3. [Icon](./Icon.vue)
 4. [Emodji](./Emodji.vue)

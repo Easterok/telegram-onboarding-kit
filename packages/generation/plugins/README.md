@@ -1,6 +1,6 @@
 # Plugins
 
-1. [definePressets](./definePressets/DefinePressets.plugin.ts)
+1. [definePresets](./definePresets/DefinePresets.plugin.ts)
 
 The main plugin for defining presets within an application generated using the `bootstrap` function
 

@@ -9,7 +9,7 @@ export default defineConfig({
     ru: import('./locales/ru.json'),
     en: import('./locales/en.json'),
   },
-  definePressets: {
+  definePresets: {
     story: Story,
   },
   currencyConfig: {

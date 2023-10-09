@@ -13,10 +13,10 @@
 <script setup lang="ts">
 import { toRefs } from 'vue';
 
-import { ImagePressetProps } from './Media.presset.props';
+import { ImagePresetProps } from './Media.preset.props';
 import { useLoadedImage } from './useLoadedImage';
 
-const props = defineProps<ImagePressetProps>();
+const props = defineProps<ImagePresetProps>();
 
 const { src, webp } = toRefs(props);
 

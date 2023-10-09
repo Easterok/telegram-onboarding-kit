@@ -17,9 +17,9 @@ import { useI18n } from '@tok/i18n';
 import { SvgIcon } from '@tok/ui/components/SvgIcon';
 import { computed, defineAsyncComponent, toRefs } from 'vue';
 
-import { _MediaLoader, IconPressetProps } from './Media.presset.props';
+import { _MediaLoader, IconPresetProps } from './Media.preset.props';
 
-const props = withDefaults(defineProps<IconPressetProps>(), {
+const props = withDefaults(defineProps<IconPresetProps>(), {
   src: '',
   webp: '',
 });

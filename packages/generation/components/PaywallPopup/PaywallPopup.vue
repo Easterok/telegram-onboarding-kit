@@ -9,7 +9,7 @@
     @update:model-value="onUpdate"
   >
     <template #button-icon="{ item }">
-      <media-presset
+      <media-preset
         v-if="'media' in item"
         v-bind="item.media"
         :class="$style.media"
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import { MediaPresset } from '@tok/generation/components/Media';
+import { MediaPreset } from '@tok/generation/components/Media';
 import { useI18n } from '@tok/i18n';
 import { TelegramPopup } from '@tok/telegram-ui/components/TelegramPopup';
 import { computed, toRefs } from 'vue';

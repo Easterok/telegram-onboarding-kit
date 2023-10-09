@@ -7,7 +7,7 @@ const imageStyle =
 
 export default defineConfig({
   theme: 'dark',
-  definePressets: {
+  definePresets: {
     action_slide: ActionSlide,
   },
   currencyConfig: {

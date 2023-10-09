@@ -1,18 +1,18 @@
-import type { MediaPressetProps } from '@tok/generation/components/Media';
+import type { MediaPresetProps } from '@tok/generation/components/Media';
 import type { ThemeConfigParam } from '@tok/generation/tokens';
 import type { FlatButtonProps } from '@tok/ui/components/FlatButton';
 import type { CurrencyOptions } from '@tok/ui/tokens';
 import type { PopupButton } from '@twa-dev/types';
 import type { CSSProperties } from 'vue';
 
-export type PaywalPopupPressetButtons = (PopupButton & {
-  media?: MediaPressetProps;
+export type PaywalPopupPresetButtons = (PopupButton & {
+  media?: MediaPresetProps;
 })[];
 
 export type _GenerationSlideConfig = {
   extends?: 'slide';
 
-  media?: MediaPressetProps;
+  media?: MediaPresetProps;
 
   title: string;
 
@@ -46,7 +46,7 @@ export type _GenerationFormConfig = Omit<_GenerationSlideConfig, 'extends'> & {
 
 export type _GenerationListOptionsConfig = (
   | {
-      media?: MediaPressetProps;
+      media?: MediaPresetProps;
       text: string;
     }
   | string
@@ -57,7 +57,7 @@ export type _GenerationPaywallPopup = {
   type?: 'web' | 'telegram';
   title?: string;
   message?: string;
-  buttons?: PaywalPopupPressetButtons;
+  buttons?: PaywalPopupPresetButtons;
 };
 
 export type _GenerationPrimitivePaywallConfig = Omit<
@@ -94,7 +94,7 @@ export type _GenerationPaywallSingleConfig =
     extends: 'paywall_single';
 
     product: _GenerationPrimitivePaywallProduct & {
-      media?: MediaPressetProps;
+      media?: MediaPresetProps;
     };
   };
 
@@ -133,7 +133,7 @@ type BootstrapPage<TCustom extends Record<string, unknown>> = {
   | { extends: keyof TCustom }
 );
 
-export type DefinedPressetsKeys<T = BootstrapPage<{}>> = T extends {
+export type DefinedPresetsKeys<T = BootstrapPage<{}>> = T extends {
   extends: infer E;
 }
   ? E
@@ -147,7 +147,7 @@ export type BootstrapConfig<TDefined extends Record<string, unknown>> = {
     fallback: string;
   } & Record<string, any>;
   currencyConfig?: CurrencyOptions;
-  definePressets?: TDefined;
+  definePresets?: TDefined;
   pages: BootstrapPage<TDefined>[];
 };
 

@@ -1,11 +1,11 @@
 # Configuration Guide
 
 1. [DefineConfig and Bootstrap](#defineconfig-and-bootstrap)
-2. [Pressets](#pressets)
+2. [Presets](#presets)
    - [base](#base)
    - [slide](#slide)
      - [Standalone Page](#standalone-page)
-     - [Inside base.presset](#inside-basepresset)
+     - [Inside base.preset](#inside-basepreset)
      - Parameters
        - [Title](#title-required)
        - [Button](#button-required)
@@ -46,7 +46,7 @@
 6. [Currency Config](#currency-config)
 7. [Localization](#localization)
 8. [Currency localization](#currency-localization)
-9. [Custom Pressets](#custom-pressets)
+9. [Custom Presets](#custom-presets)
 
 # DefineConfig and Bootstrap
 
@@ -57,7 +57,7 @@ The structure of your configuration:
 ```ts
 export default defineConfig({
     // [Required]. App pages configuration.
-    // More info in the "Pressets" section
+    // More info in the "Presets" section
     pages: [...],
 
     // [Optional]. Theme configuration.
@@ -72,13 +72,13 @@ export default defineConfig({
     // More information in the "Currency Config" section
     currencyConfig: {},
 
-    // [Optional]. custom pressets configuration
-    // More info in the "Custom Pressets" section
-    definePressets: {},
+    // [Optional]. custom presets configuration
+    // More info in the "Custom Presets" section
+    definePresets: {},
 });
 ```
 
-# Pressets
+# Presets
 
 In the `pages` section of your configuration file, you can extend our presets with the following code:
 
@@ -110,7 +110,7 @@ You can see all available extensions in the examples below
 }
 ```
 
-[Link to the component](./packages/generation/pressets/base/README.md)
+[Link to the component](./packages/generation/presets/base/README.md)
 
 This is the main preset of your application, representing a [Carousel](./packages/ui/components/Carousel/README.md). You can use it without defining an extends keyword. We will automatically resolve this preset **only for root elements** inside the pages section
 
@@ -126,7 +126,7 @@ export default defineConfig({
 });
 ```
 
-The only required parameter for this `base.presset` is `slides`, which takes an array of other presets.
+The only required parameter for this `base.preset` is `slides`, which takes an array of other presets.
 
 ```ts
 export default defineConfig({
@@ -148,7 +148,7 @@ export default defineConfig({
 });
 ```
 
-By default, if there is no `extends` keyword inside the `slides`, the `Base` will use [slide presset](#slide)
+By default, if there is no `extends` keyword inside the `slides`, the `Base` will use [slide preset](#slide)
 
 So, this is valid config for this case:
 
@@ -176,9 +176,9 @@ export default defineConfig({
 }
 ```
 
-[Link to the component](./packages/generation/pressets/slide/README.md)
+[Link to the component](./packages/generation/presets/slide/README.md)
 
-This presset can be used as a standalone page or inside [base.presset](#base)
+This preset can be used as a standalone page or inside [base.preset](#base)
 
 ### Standalone page
 
@@ -193,13 +193,13 @@ export default defineConfig({
 });
 ```
 
-### Inside base.presset
+### Inside base.preset
 
-Refer to the examples above for [base.presset](#base)
+Refer to the examples above for [base.preset](#base)
 
 ### Parameters
 
-The examples below are for standalone page usage. The same configuration can be used for a slide inside [base.presset](#base).
+The examples below are for standalone page usage. The same configuration can be used for a slide inside [base.preset](#base).
 
 And `Button` will be shown only inside Telegram
 
@@ -302,7 +302,7 @@ export default defineConfig({
 <details>
   <summary>With the code above you will get this result:</summary>
 
-Keep in mind that all media pressets with `type="image"` by default will be with aspect-ratio: 1/1
+Keep in mind that all media presets with `type="image"` by default will be with aspect-ratio: 1/1
 
 ![preview](./docs/images/slide_media.png)
 
@@ -377,7 +377,7 @@ export default defineConfig({
 
 ### Pagination [Optional]
 
-If you are using the [slide.presset](#slide) inside slides in [base.presset](#base), you can use the `pagination` parameter to show the counter on the page. If it's not inside [base.presset](#base), pagination won't be displayed.
+If you are using the [slide.preset](#slide) inside slides in [base.preset](#base), you can use the `pagination` parameter to show the counter on the page. If it's not inside [base.preset](#base), pagination won't be displayed.
 
 ```ts
 export default defineConfig({
@@ -563,9 +563,9 @@ export default defineConfig({
 }
 ```
 
-[Link to the component](./packages/generation/pressets/form/README.md)
+[Link to the component](./packages/generation/presets/form/README.md)
 
-This preset supports all the parameters from the [slide](#slide) and adds a new one: `form`.
+This preset supports all parameters from the [slide](#slide) and introduces new ones: `form`.
 
 ### Parameters
 
@@ -650,11 +650,11 @@ export default defineConfig({
 }
 ```
 
-[Link to the component](./packages/generation/pressets/paywall/README.md)
+[Link to the component](./packages/generation/presets/paywall/README.md)
 
 The currency can be customized. [See these examples](#currency-config).
 
-This preset supports all the parameters except `button` from the [slide](#slide) and adds new ones:
+This preset supports all parameters except `button` from the [slide](#slide) and introduces new ones:
 
 ### Parameters
 
@@ -671,7 +671,7 @@ export default defineConfig({
         {
           id: 'id1',
           title: 'Title',
-          // you can show price instead of description with this "trick"
+          // You can display the price instead of the description using this "trick"
           description: '',
           price: 10,
         },
@@ -738,7 +738,7 @@ export default defineConfig({
 
 By default will be with "Continue" text
 
-You can show price inside main button text with this config:
+You can display the price inside the main button like this:
 
 ```ts
 export default defineConfig({
@@ -772,7 +772,7 @@ By default will be show our predefinned popup
 
 By default: 'telegram'
 
-You can tell that you want to show only web popup with this parameter:
+You can specify this parameter to indicate your preference for displaying only web popups
 
 ```ts
 export default defineConfig({
@@ -963,9 +963,9 @@ export default defineConfig({
 }
 ```
 
-[Link to the component](./packages/generation/pressets/paywall_single/README.md)
+[Link to the component](./packages/generation/presets/paywall_single/README.md)
 
-This preset supports all the parameters except `products` from the [paywall](#paywall) and add new once:
+This preset supports all parameters (except `products`) from the [paywall](#paywall) and add new one:
 
 ### Parameters
 
@@ -997,7 +997,7 @@ export default defineConfig({
 
 </details>
 
-And you can add some media for your product:
+You can also include some [media](#media) for your product
 
 ```ts
 export default defineConfig({
@@ -1038,9 +1038,9 @@ export default defineConfig({
 }
 ```
 
-[Link to the component](./packages/generation/pressets/paywall_row/README.md)
+[Link to the component](./packages/generation/presets/paywall_row/README.md)
 
-This preset supports all the parameters from the [paywall](#paywall) but overrides products:
+This preset supports all parameters from the [paywall](#paywall) but **overrides products**:
 
 ### Parameters
 
@@ -1277,7 +1277,7 @@ Styles by default:
 
 # Button Actions
 
-You can specify button action behavior inside [slide.presset](#slide).
+You can specify button action behavior inside [slide.preset](#slide).
 It will be shown as text with the default behavior of navigating to the next slide if possible.
 
 > [!NOTE]
@@ -1487,7 +1487,7 @@ export default defineConfig({
 });
 ```
 
-# Custom Pressets
+# Custom Presets
 
 > [!NOTE]
 > Try to avoid using reserved preset names above.
@@ -1499,17 +1499,17 @@ You can define custom presets if you want to using the following code:
 
 ```ts
 // this will be inside intial bundle
-import CustomPresset from './CustomPresset.vue';
+import CustomPreset from './CustomPreset.vue';
 
-// this will be loaded asynchronously when such presset will be shown
-const AsyncCustomPresset = defineAsyncComponent(
-  () => import('./CustomPresset.vue')
+// this will be loaded asynchronously when such preset will be shown
+const AsyncCustomPreset = defineAsyncComponent(
+  () => import('./CustomPreset.vue')
 );
 
 export default defineConfig({
-  definePressets: {
-    your_custom_name: CustomPresset,
-    async_your_custom_name: AsyncCustomPresset,
+  definePresets: {
+    your_custom_name: CustomPreset,
+    async_your_custom_name: AsyncCustomPreset,
   },
   // and use them as:
   pages: [

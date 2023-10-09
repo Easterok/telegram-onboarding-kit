@@ -1,2 +1,2 @@
-export * from './Media.presset.props';
-export { default as MediaPresset } from './Media.presset.vue';
+export * from './Media.preset.props';
+export { default as MediaPreset } from './Media.preset.vue';

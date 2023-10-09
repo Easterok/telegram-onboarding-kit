@@ -2,7 +2,7 @@
   <div :class="$style.slide">
     <div ref="focusTrapRef" tabindex="0" :class="$style.focustrap" />
 
-    <media-presset
+    <media-preset
       v-if="media"
       v-bind="media"
       :class="[$style.media, $style['media_' + shape]]"
@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { MediaPresset } from '@tok/generation/components/Media';
+import { MediaPreset } from '@tok/generation/components/Media';
 import { useCarousel } from '@tok/generation/use/carousel';
 import { useI18n } from '@tok/i18n';
 import { MainButton } from '@tok/telegram-ui/components/MainButton';
