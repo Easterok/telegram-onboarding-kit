@@ -24,7 +24,8 @@ https://github.com/Easterok/telegram-onboarding-kit/assets/7571844/1453b3af-5c13
 - Buttons with **haptic feedback**
 - Content pre-loading for smooth user experience
 - Telegram-native design
-- Many **examples/presets**
+- Many **examples/presets** (with free-to-use [Figma project](https://www.figma.com/file/ssQqPZ2vqZhD4QF2xyCTd2/Telegram-Onboarding--ToolKit))
+- Extensive documentation with visual examples
 - MIT License (free for commercial use)
 
 ## Quick Start
