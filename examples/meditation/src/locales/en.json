@@ -1,0 +1,48 @@
+{
+  "_s1": {
+    "title": "Welcome to the world of meditation!",
+    "description": "Find your inner peace and harmony with our app",
+    "button": "Next"
+  },
+  "_s2": {
+    "title": "Tell about yourself",
+    "description": "It will help us build your health roadmap",
+    "namePlaceholder": "Your name",
+    "agePlaceholder": "Your age"
+  },
+  "_s3": {
+    "title": "What type of meditation do you prefer?",
+    "guided": "Guided Meditation",
+    "mind": "Mindfulness Meditation",
+    "trans": "Transcendental Meditation",
+    "yoga": "Yoga Meditation",
+    "other": "Other"
+  },
+  "_s4": {
+    "title": "Explore what works for you",
+    "list1": "Extensive collection of guided meditations",
+    "list2": "Meditations in multiple languages",
+    "list3": "Set reminders for regular practice",
+    "list4": "Night mode for pre-sleep meditation",
+    "list5": "Track your progress",
+    "button": "Start the health way"
+  },
+  "_paywall": {
+    "title": "Unlock the <span style=\"color: #7546FB\">Full Experience!</span>",
+    "description": "Get unlimited access to all our premium features and meditations",
+    "product": {
+      "title": "Lifetime Access",
+      "description": "<b>One-time payment for unlimited access.</b><br />Dive deep into a world of relaxation and mindfulness"
+    },
+    "policy": "Privacy policy",
+    "policy_href": "https://google.com",
+    "terms": "Terms of use",
+    "terms_href": "https://google.com",
+    "main": "Buy for {price}",
+    "popup": {
+      "title": "Choose the payment method",
+      "telegram_payments": "Bank Card",
+      "wallet_pay": "Wallet Pay"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "name": "@tok/telegram-onboarding-kit",
+    "version": "0.0.0",
+    "scripts": {
+        "*** Your app ***": "",
+        "dev": "turbo run dev --scope @tok/app",
+        "build": "turbo run build --scope @tok/app",
+        "*********************************************": "",
+        "*** ai ***": "",
+        "dev:ai": "turbo run dev --scope @tok/ai",
+        "build:ai": "turbo run build --scope @tok/ai",
+        "*** meditation ***": "",
+        "dev:meditation": "turbo run dev --scope @tok/meditation",
+        "build:meditation": "turbo run build --scope @tok/meditation",
+        "*** tales ***": "",
+        "dev:tales": "turbo run dev --scope @tok/tales",
+        "build:tales": "turbo run build --scope @tok/tales",
+        "*** vpn ***": "",
+        "dev:vpn": "turbo run dev --scope @tok/vpn",
+        "build:vpn": "turbo run build --scope @tok/vpn",
+        "*** chatgpt ***": "",
+        "dev:chatgpt": "turbo run dev --scope @tok/chatgpt",
+        "build:chatgpt": "turbo run build --scope @tok/chatgpt",
+        "*** bot *** ": "",
+        "dev:bot": "turbo run dev --scope @tok/bot",
+        "*** other *** ": "",
+        "build:all": "turbo run build",
+        "compress": "turbo run compress --scope @tok/compress"
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1",
+        "turbo": "^1.10.14",
+        "typescript": "5.2.2"
+    },
+    "packageManager": "npm@9.5.1",
+    "workspaces": [
+        "app",
+        "bot",
+        "examples/*",
+        "packages/*"
+    ]
+}

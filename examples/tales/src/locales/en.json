@@ -1,0 +1,81 @@
+{
+  "_currency": {
+    "value": "USD",
+    "align": "left"
+  },
+  "_wtHref": "https://wondertales.io/?utm_source=telegram_onboarding",
+  "_wtHrefText": "wondertales.io",
+  "_s1": {
+    "title": "Wonder Tales",
+    "description": "Your one-stop destination for incredible custom tales for kids",
+    "button": "Let's start"
+  },
+  "_s2": {
+    "title": "Give your children stories:",
+    "list1": "Which entertain",
+    "list2": "They teach valuable life lessons",
+    "list3": "Also in audio format for toddlers",
+    "list4": "New stories every day",
+    "button": "Next"
+  },
+  "_s3": {
+    "title": "Easy",
+    "description": "It will be easy and individual<br/><b>Just three steps:</b>",
+    "list1": "Choose the main character",
+    "list2": "Specify the second character of the fairy tal",
+    "list3": "Choose one of the morals prepared and worked out in advance",
+    "button": "What else?"
+  },
+  "_s4": {
+    "title": "Fast",
+    "list1": "The first page can be seen in <b>2-3 minutes</b>",
+    "list2": "Our fairy tales can be listened to in <b>audio format</b>",
+    "button": "Wow!"
+  },
+  "_s5": {
+    "title": "Colorful",
+    "description": "Fairy tales are complemented by vivid illustrations created by artificial intelligence and inspired by the best illustrators of children's books",
+    "button": "Next"
+  },
+  "_s6": {
+    "title": "Available in several languages",
+    "description": "Read the same fairy tale to your children in <b>English</b> or <b>Russian</b>",
+    "button": "See the example"
+  },
+  "_paywall": {
+    "title": "Tales <span style=\"color: var(--tok-primary)\">Unbounded</span>",
+    "policy": "Privacy policy",
+    "policy_href": "https://google.com",
+    "terms": "Terms of use",
+    "terms_href": "https://google.com",
+    "main": "Subscribe",
+    "feature1": "An endless number of fairy tales",
+    "feature2": "Access to fairy tales anytime",
+    "feature3": "All fairy tales are saved",
+    "product1": "1 month",
+    "product1Price": 8.95,
+    "discount": "Discount 34%",
+    "price1Text": "8.95$ per month",
+    "price2Text": "5.95$ per month",
+    "product2": "1 year",
+    "product2Price": 71.4,
+    "popup": {
+      "title": "Choose the payment method",
+      "telegram_payments": "Bank Card",
+      "wallet_pay": "Wallet Pay"
+    }
+  },
+  "_story": {
+    "title": "Story",
+    "name": "Kayley and the Magical Adventures of Dr Kitty Cat",
+    "page1": "Once upon a time, in a small town called Cloverville, lived a sweet little girl named Kayley. Kayley had a heart full of love and kindness, and she loved nothing more than cuddling with her fluffy white kitten, Dr Kitty Cat. One beautiful evening, as the sun began to set, Kayley and Dr Kitty Cat decided to go on a magical adventure. They tiptoed out of their house, filled with excitement and wonder. Holding hands, they walked towards the forest, where they knew magical creatures lived. As they entered the enchanted forest, they spotted a shimmering stream filled with fish as colorful as rainbows. A tiny fairy flying above the water called out to them, \"Hello, Kayley and Dr Kitty Cat! Welcome to our magical realm!",
+    "page2": "Would you like to play with us?\" Kayley's eyes sparkled like stars as she replied, \"Oh yes, fairy friend! We would love to join you on your adventures!\" Dr Kitty Cat meowed in agreement. The fairy sprinkled magical dust on Kayley and Dr Kitty Cat, turning them into pixies. They fluttered their wings and joined a game of tag with the fairy and her friends. They flew through the trees, giggling and laughing, feeling the wind tickle their faces. Suddenly, they heard a loud roar coming from deep within the forest.",
+    "page3": "It was a gentle dragon named Sparkle, who had lost her way. Kayley and Dr Kitty Cat knew they had to help her find her path again. \"Don't worry, Sparkle! We will find your home together!\" Kayley reassured the dragon. They followed Sparkle's footsteps, through dark caves and over sparkling rivers until they reached a beautiful waterfall. Sparkle's eyes widened with joy as she realized she had found her home. \"Thank you, kind friends!",
+    "page4": "You have shown me the way back to where I belong!\" Kayley and Dr Kitty Cat waved goodbye to Sparkle, happy to have helped her. As they continued their adventure, they stumbled upon a meadow filled with singing flowers. Each flower had a unique tune, creating a harmonious melody. The flowers invited Kayley and Dr Kitty Cat to dance with them. They twirled and spun, their laughter echoing through the meadow as they became part of the song. The flowers whispered secrets about the magic of kindness, reminding Kayley and Dr Kitty Cat to treat others the way they would like to be treated. Leaving the meadow with joyful hearts, Kayley and Dr Kitty Cat found themselves in a enchanted village made entirely of sweets.",
+    "page5": "Houses made of gingerbread and candy cane trees surrounded them. The villagers were colorful gummy bears and friendly lollipops. The villagers offered Kayley and Dr Kitty Cat a special treat - a magical lollipop that could grant one wish. Kayley thought for a moment and turned to Dr Kitty Cat, \"What do you think, Dr Kitty Cat? What should we wish for?\" Dr Kitty Cat purred thoughtfully and then whispered in Kayley's ear, \"Let's wish for happiness and kindness to fill the world.\" Kayley smiled and made her wish, knowing that together, they could make a difference. With their wish granted, the magical lollipop filled the village with an enchanting glow.",
+    "page6": "The villagers clapped and cheered as Kayley and Dr Kitty Cat's wish spread, bringing kindness and love to everyone they met. As the night grew darker, Kayley and Dr Kitty Cat realized it was time to head back home. They thanked the villagers and started their journey back, feeling grateful for the incredible adventures and the magical friends they had made along the way. Hand in hand, Kayley and Dr Kitty Cat returned to their cozy home in Cloverville. They cuddled up in bed, knowing that they had experienced a truly enchanting adventure. As they drifted off to sleep, the magic of the day stayed with them, reminding them to always treat others with kindness and love. And so, in Cloverville, Kayley and Dr Kitty Cat's story was whispered throughout generations, reminding everyone of the importance of treating others the way they would like to be treated – with love, kindness, and a touch of enchantment.",
+    "end": "THE END",
+    "back": "Continue",
+    "mainButton": "Create your own fairy tale"
+  }
+}

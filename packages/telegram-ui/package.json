@@ -1,0 +1,15 @@
+{
+    "name": "@tok/telegram-ui",
+    "version": "0.0.0",
+    "dependencies": {
+        "@tok/ui": "*",
+        "@twa-dev/sdk": "^6.9.0",
+        "lottie-web": "^5.12.2",
+        "vue": "^3.3.4",
+        "vue-router": "^4.2.5"
+    },
+    "devDependencies": {
+        "@tok/eslint-config": "*",
+        "@tok/tsconfig": "*"
+    }
+}

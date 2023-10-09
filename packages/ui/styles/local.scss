@@ -1,0 +1,71 @@
+@mixin clearbutton() {
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: inherit;
+  line-height: inherit;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+@mixin transition($prop, $duration: 0.2s, $timing: ease-in-out) {
+  transition: $prop $duration $timing;
+}
+
+@mixin size($width, $height) {
+  min-width: $width;
+  min-height: $height;
+
+  width: $width;
+  height: $height;
+
+  max-width: $width;
+  max-height: $height;
+}
+
+@mixin hidescroll() {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar,
+  &::-webkit-scrollbar-thumb {
+    display: none;
+
+    background: transparent;
+    width: 0;
+    height: 0;
+
+    -webkit-appearance: none;
+  }
+}
+
+@mixin clearinput() {
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background: none;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+  caret-color: currentColor;
+  outline: none;
+  appearance: none;
+  word-break: keep-all;
+  text-align: left;
+  -webkit-text-fill-color: currentColor; // for Safari
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    border-radius: inherit;
+    -webkit-text-fill-color: inherit !important;
+    color: inherit !important;
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 1000px var(--tok-text-color) 5c0 inset !important; // to overlay native background
+  }
+}

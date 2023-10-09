@@ -1,0 +1,10 @@
+{
+  "name": "@tok/compress",
+  "version": "1.0.0",
+  "scripts": {
+    "compress": "node compress.mjs"
+  },
+  "devDependencies": {
+    "sharp": "0.32.0"
+  }
+}

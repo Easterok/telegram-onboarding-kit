@@ -1,0 +1,13 @@
+{
+    "name": "@tok/ui",
+    "version": "0.0.0",
+    "dependencies": {
+        "vue": "^3.3.4",
+        "vue-router": "^4.2.5"
+    },
+    "devDependencies": {
+        "@tok/eslint-config": "*",
+        "@tok/tsconfig": "*",
+        "sass": "^1.62.1"
+    }
+}

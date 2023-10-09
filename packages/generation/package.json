@@ -1,0 +1,23 @@
+{
+    "name": "@tok/generation",
+    "version": "0.0.0",
+    "main": "./index.ts",
+    "types": "./index.ts",
+    "dependencies": {
+        "@tok/i18n": "*",
+        "@tok/telegram-ui": "*",
+        "@tok/ui": "*",
+        "vue": "^3.3.4",
+        "vue-router": "^4.2.5"
+    },
+    "devDependencies": {
+        "@tok/eslint-config": "*",
+        "@tok/tsconfig": "*",
+        "@types/node": "^20.8.0",
+        "@types/pako": "^1.0.1",
+        "@vitejs/plugin-vue": "^4.2.3",
+        "pako": "1.0.11",
+        "vite": "^4.4.9",
+        "vite-svg-loader": "^4.0.0"
+    }
+}

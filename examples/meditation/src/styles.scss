@@ -1,0 +1,8 @@
+// See https://github.com/Easterok/telegram-onboarding-kit/tree/main/packages/ui/styles
+// on how to override global CSS parameters
+
+:root,
+html[data-theme='dark'] {
+  --tok-primary: #5734bc;
+  --tok-primary-text: var(--tok-white);
+}

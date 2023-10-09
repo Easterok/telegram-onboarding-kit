@@ -1,0 +1,17 @@
+{
+    "name": "@tok/vpn",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite --port 3004 --open",
+        "build": "vite build"
+    },
+    "dependencies": {
+        "@tok/generation": "*",
+        "vue": "^3.3.4",
+        "vue-router": "^4.2.5"
+    },
+    "devDependencies": {
+        "@tok/tsconfig": "*",
+        "@tok/eslint-config": "*"
+    }
+}

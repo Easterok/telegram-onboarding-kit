@@ -1,0 +1,12 @@
+{
+  "extends": "@tok/tsconfig/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["pako", "@types/node", "vite/client"]
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

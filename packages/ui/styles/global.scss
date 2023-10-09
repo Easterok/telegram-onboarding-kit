@@ -1,0 +1,190 @@
+@import './main/reset.scss';
+@import './local.scss';
+
+:root {
+  --tok-font-heading: 'Inter', -apple-system, 'BlinkMacSystemFont', system-ui,
+    'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --tok-font-h1: bold 2.25rem/2.75rem var(--tok-font-heading);
+  --tok-font-h2: bold 1.75rem/2.25rem var(--tok-font-heading);
+  --tok-font-h3: bold 1.5rem/2rem var(--tok-font-heading);
+  --tok-font-h4: bold 1.25rem/1.75rem var(--tok-font-heading);
+
+  --tok-font-text: 'Inter', -apple-system, 'BlinkMacSystemFont', system-ui,
+    'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --tok-font-l: 600 1rem/1.5rem var(--tok-font-text);
+  --tok-font-m: normal 1rem/1.5rem var(--tok-font-text);
+  --tok-font-s: 600 0.8125rem/1.125rem var(--tok-font-text);
+  --tok-font-xs: normal 0.8125rem/1.125rem var(--tok-font-text);
+
+  --tok-radius-l: 1rem;
+  --tok-radius-m: 0.75rem;
+  --tok-radius-s: 0.5rem;
+  --tok-radius-xs: 0.25rem;
+
+  --tok-height-l: 3.5rem;
+  --tok-height-m: 2.75rem;
+  --tok-height-s: 2rem;
+  --tok-height-xs: 1.5rem;
+
+  --tok-padding-l: 1rem;
+  --tok-padding-m: 0.75rem;
+  --tok-padding-s: 0.5rem;
+  --tok-padding-xs: 0.25rem;
+
+  --tok-disabled-opacity: 0.56;
+
+  --tok-hover-opacity: 0.8;
+
+  // #fff -> rgb(255, 255, 255)
+  --tok-background-color-base: 255, 255, 255;
+  --tok-background-color: rgba(var(--tok-background-color-base), 1);
+  --tok-background-color-80: rgba(var(--tok-background-color-base), 0.8);
+  --tok-background-color-64: rgba(var(--tok-background-color-base), 0.64);
+  --tok-background-color-48: rgba(var(--tok-background-color-base), 0.48);
+  --tok-background-color-32: rgba(var(--tok-background-color-base), 0.32);
+  --tok-background-color-24: rgba(var(--tok-background-color-base), 0.24);
+  --tok-background-color-16: rgba(var(--tok-background-color-base), 0.16);
+  --tok-background-color-08: rgba(var(--tok-background-color-base), 0.08);
+
+  // #1c1c1d -> rgb(27, 27, 29)
+  --tok-text-color-base: 27, 27, 29;
+  --tok-text-color: rgba(var(--tok-text-color-base), 1);
+  --tok-text-color-80: rgba(var(--tok-text-color-base), 0.8);
+  --tok-text-color-64: rgba(var(--tok-text-color-base), 0.64);
+  --tok-text-color-48: rgba(var(--tok-text-color-base), 0.48);
+  --tok-text-color-32: rgba(var(--tok-text-color-base), 0.32);
+  --tok-text-color-24: rgba(var(--tok-text-color-base), 0.24);
+  --tok-text-color-16: rgba(var(--tok-text-color-base), 0.16);
+  --tok-text-color-08: rgba(var(--tok-text-color-base), 0.08);
+
+  --tok-primary: var(--tg-theme-button-color, #007aff);
+  --tok-primary-text: var(--tg-theme-button-text-color, var(--tok-white));
+
+  --tok-stinger: #f6f6f9;
+
+  --tok-link: var(--tg-theme-link-color, var(--tok-text-color-80));
+
+  --tok-error-bg: #ce372d1f;
+  --tok-error-fill: #ce372d;
+
+  --tok-success-bg: #4ac99b1f;
+  --tok-success-fill: #4ac99b;
+
+  // static
+  --tok-white: #fff;
+  --tok-dark: #111;
+  --tok-dark-80: #111111cc;
+}
+
+html {
+  height: auto;
+}
+
+html[data-theme='dark'] {
+  --tok-background-color-base: 27, 27, 29;
+
+  --tok-text-color-base: 255, 255, 255;
+
+  --tok-primary: var(--tg-theme-button-color, #3e88f7);
+  --tok-primary-text: var(--tg-theme-button-text-color, var(--tok-white));
+
+  --tok-stinger: #333333;
+
+  --tok-error-bg: #ff8c6752;
+  --tok-error-fill: #ff8c67;
+
+  --tok-success-bg: #4ac99b52;
+  --tok-success-fill: #4ac99b;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: var(--tg-viewport-stable-height, 100vh);
+
+  max-width: 420px;
+  margin: 0 auto;
+
+  font: var(--tok-font-m);
+  color: var(--tok-text-color);
+  background-color: var(--tok-background-color);
+
+  overflow-x: hidden;
+}
+
+h1 {
+  font: var(--tok-font-h1);
+}
+
+h2 {
+  font: var(--tok-font-h2);
+}
+
+h3 {
+  font: var(--tok-font-h3);
+}
+
+h4 {
+  font: var(--tok-font-h4);
+}
+
+.tok-text {
+  &_l {
+    font: var(--tok-font-l);
+  }
+
+  &_m {
+    font: var(--tok-font-m);
+  }
+
+  &_s {
+    font: var(--tok-font-s);
+  }
+
+  &_xs {
+    font: var(--tok-font-xs);
+  }
+}
+
+p {
+  b {
+    font-weight: 600;
+  }
+}
+
+a {
+  @include transition(opacity);
+
+  color: var(--tok-link);
+  text-decoration: none;
+
+  &:hover {
+    opacity: var(--tok-hover-opacity);
+  }
+}
+
+.tok-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.tok-ripple-ink {
+  display: block;
+  position: absolute;
+  background: var(--tok-background-color-48);
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+
+  &_active {
+    animation: tok-ripple-anim 0.4s linear;
+  }
+}
+
+@keyframes tok-ripple-anim {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
