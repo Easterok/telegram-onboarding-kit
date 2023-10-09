@@ -10,7 +10,7 @@ To start:
 - Watch tutorial: [![YouTube | Watch Tutorial](https://img.shields.io/badge/YouTube-Watch%20Tutorial-red?logo=youtube&style=social)](https://www.youtube.com/watch?v=q9R42T-7ykI)
 - And check out video demo:
 
-https://github.com/Easterok/telegram-onboarding-kit/assets/7571844/a3b7040d-35fa-40c5-ac36-d0595eb33457
+https://github.com/Easterok/telegram-onboarding-kit/assets/7571844/1453b3af-5c13-467a-a02d-41c3ea12e795
 
 ## Features
 
