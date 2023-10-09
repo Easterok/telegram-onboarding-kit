@@ -14,5 +14,5 @@ export type BackButtonEmits = {
 
 export const BackButtonDefaultProps = {
   type: 'telegram',
-  appearance: 'flat',
+  appearance: 'ghost',
 } as const;
