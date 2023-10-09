@@ -1281,7 +1281,7 @@ You can specify button action behavior inside [slide.presset](#slide).
 It will be shown as text with the default behavior of navigating to the next slide if possible.
 
 > [!NOTE]
-> For the [paywalls](#paywall) you can't override button behavior
+> You can't override button behavior for the [paywalls](#paywall)
 
 ```ts
 export default defineConfig({
@@ -1385,6 +1385,8 @@ For example:
 }
 ```
 
+It's not necessary to use `_` at the beginning of each token; it's just for illustration purposes to make it easier to determine which value is being localized
+
 ```ts
 export default defineConfig({
   locale: {
@@ -1395,7 +1397,7 @@ export default defineConfig({
   pages: [
     {
       extends: 'slide',
-      // this will automaticaly translated
+      // this will be automaticaly translated
       title: '_hello',
     },
   ],
