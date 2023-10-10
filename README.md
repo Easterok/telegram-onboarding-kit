@@ -48,7 +48,7 @@ For detailed information on configuring the app, refer to the [Configuration Gui
 ## Integrate onboarding into your bot
 The perfect location for onboarding is right at the start of the bot. It will help you to brightly present your product to the user.
 
-To integrate onboarding to your bot, you simply need to add a **button** with a link of your deployed onboarding web application. Technically, there are 2 methods: [MenuButton](https://core.telegram.org/api/bots/menu) and [KeyboardButton](https://core.telegram.org/type/KeyboardButton).
+To integrate onboarding to your bot, you simply need to add a **button** with a link of your deployed onboarding web application. Telegram currently supports six different ways of [launching Mini Apps](https://core.telegram.org/bots/webapps#implementing-mini-apps). For onboadring launching we recommend using [MenuButton](https://core.telegram.org/api/bots/menu) or [KeyboardButton](https://core.telegram.org/type/KeyboardButton).
 
 ### MenuButton
 MenuButton is a special button which appears on the left side of the text input (see [@DurgerKingBot](https://t.me/DurgerKingBot)). This button can be configured without any server code in [@BotFather](https://t.me/BotFather):
