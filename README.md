@@ -46,7 +46,7 @@ The heart of this project lies in the configuration. By tweaking the configurati
 For detailed information on configuring the app, refer to the [Configuration Guide](./configuration-guide.md).
 
 ## Integrate onboarding into your bot
-Perfect location for onboarding is at the beginning of the flow, right after the user starts the bot. It will help you to brightly present your product to the user.
+The perfect location for onboarding is right at the start of the bot. It will help you to brightly present your product to the user.
 
 To integrate onboarding to your bot, you simply need to add a **button** with a link of your deployed onboarding web application. Technically, there are 2 methods: [MenuButton](https://core.telegram.org/api/bots/menu) and [KeyboardButton](https://core.telegram.org/type/KeyboardButton).
 
