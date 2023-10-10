@@ -89,13 +89,13 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                 ),
             ),
             KeyboardButton(
-                text="💃 Fashion AI Bot",
+                text="💃 Fashion AI Onboarding",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url("https://tok-ai.netlify.app", user_data)
                 ),
             ),
             KeyboardButton(
-                text="🧘 Meditation Bot",
+                text="🧘 Meditation Onboarding",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
                         "https://tok-meditation.netlify.app", user_data
@@ -103,7 +103,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                 ),
             ),
             KeyboardButton(
-                text="🧚‍♂️ AI Tales Bot",
+                text="🧚‍♂️ AI Tales Onboarding",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
                         "https://tok-wondertales.netlify.app", user_data
