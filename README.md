@@ -39,11 +39,56 @@ But if you prefer text:
 3. And now you're ready to run the app with `npm run dev` command
 4. To run python bot put your tokens to `bot/.env` (use `bot/example.env` as an example). Then start the bot with `npm run bot` command
 
-## Configuration
+## Onboarding/Paywall configuration
 
 The heart of this project lies in the configuration. By tweaking the configuration file, you can customize the onboarding experience according to your project's requirements. The configuration file can be found at [config.ts](./app/src/config.ts).
 
 For detailed information on configuring the app, refer to the [Configuration Guide](./configuration-guide.md).
+
+## Integrate onboarding into your bot
+The perfect location for onboarding is right at the start of the bot. It will help you to brightly present your product to the user.
+
+To integrate onboarding to your bot, you simply need to add a **button** with a link of your deployed onboarding web application. Technically, there are 2 methods: [MenuButton](https://core.telegram.org/api/bots/menu) and [KeyboardButton](https://core.telegram.org/type/KeyboardButton).
+
+### MenuButton
+MenuButton is a special button which appears on the left side of the text input (see [@DurgerKingBot](https://t.me/DurgerKingBot)). This button can be configured without any server code in [@BotFather](https://t.me/BotFather):
+
+- Go to [@BotFather](https://t.me/BotFather) → `/mybots` → *Select yout bot* → `Bot Settings` → `Menu Button` → *Send your onboarding URL* → *Send button title (e.g. "Onboarding")*
+
+Now Menu Button with onboarding will appear in your bot.
+
+### KeyboardButton
+Try KeyboardButton in action in our [Demo Bot](https://t.me/onboarding_kit_demo_bot). It utilizes Telegram's [KeyboardButton](https://core.telegram.org/type/KeyboardButton) with [Mini App URL](https://core.telegram.org/constructor/keyboardButtonSimpleWebView) inside.
+
+
+Here's a snippet for `reply_markup` implemented with [python-telegram-bot](http://python-telegram-bot.readthedocs.io/) library (see full implementation in [bot.py](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py#L81)):
+```python
+reply_markup = telegram.ReplyKeyboardMarkup.from_button(
+   telegram.KeyboardButton(
+      text="🌈 Onboarding",
+      web_app=telegram.WebAppInfo(url={ONBOARDING_URL})
+   )
+)
+```
+
+Note: KeyboardButton does't send any user data to Mini App (e.g. `language_code`). But you can send all the required data with HTTP GET parameters (see [this function](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py#L51) as reference).
+
+### Adding payments
+Good ending of onboarding is a **paywall**: User selects a product → Chooses payment method → Gets invoice in the chat. After the paywall the bot receives data about the selected product like:
+```json
+{
+   "title": "Title",
+   "description": "Description",
+   "price": 5.99,
+   "currency": "USD",
+   "payment_method": "wallet_pay"
+}
+```
+This data is used for ivoice generation. We implemented 2 different payment methods: native [Telegram Payments](https://core.telegram.org/bots/payments) and [👛 Wallet Pay](https://pay.wallet.tg) (but generally any payment method can be integrated into such flow). You can find full code in [bot.py](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py):
+- Telegram Payments: [[send invoice]](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py#L201) • [[check payment status]](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py#L235)
+- 👛 Wallet Pay: [[send invoice]](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py#L245) • [[check payment status]](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py#L326)
+
+
 
 ## 🌈 Examples/Presets
 
