@@ -18,7 +18,7 @@ Use this guide to manually install the UI package in your project.
 1. Run the following command to add a link from your app to this package:
 
    ```bash
-   npm run @tok/ui --workspace=<your workspace name>
+   npm install @tok/ui --workspace=<your workspace name>
    ```
 
 2. Import our global styles in your `main.ts` file:
