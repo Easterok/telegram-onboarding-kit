@@ -37,7 +37,7 @@ import fish from '@/assets/fish.tgs';
 
 // Good
 const Sticker = defineAsyncComponent(() =>
-  import('@tok/telegram-ui/components/Sticker').then((m) => m.default)
+  import('@tok/telegram-ui/components/Sticker').then((m) => m.Sticker)
 );
 </script>
 ```
@@ -57,7 +57,7 @@ const Sticker = defineAsyncComponent(() =>
 import fish from '@/assets/fish.tgs';
 
 const Sticker = defineAsyncComponent(() =>
-  import('@tok/telegram-ui/components/Sticker').then((m) => m.default)
+  import('@tok/telegram-ui/components/Sticker').then((m) => m.Sticker)
 );
 </script>
 ```
