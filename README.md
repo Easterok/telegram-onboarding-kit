@@ -60,7 +60,8 @@ Now Menu Button with onboarding will appear in your bot.
 ### KeyboardButton
 Try KeyboardButton in action in our [Demo Bot](https://t.me/onboarding_kit_demo_bot). It utilizes Telegram's [KeyboardButton](https://core.telegram.org/type/KeyboardButton) with [Mini App URL](https://core.telegram.org/constructor/keyboardButtonSimpleWebView) inside.
 
-You can find full working implementation in our [bot's source code](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py#L81). Here's a short snippet for `reply_markup` implemented with [python-telegram-bot](http://python-telegram-bot.readthedocs.io/) lib:
+
+Here's a snippet for `reply_markup` implemented with [python-telegram-bot](http://python-telegram-bot.readthedocs.io/) library (see full implementation in [bot.py](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py#L81)):
 ```python
 reply_markup = telegram.ReplyKeyboardMarkup.from_button(
    telegram.KeyboardButton(
