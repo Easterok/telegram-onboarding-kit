@@ -39,13 +39,13 @@ But if you prefer text:
 3. And now you're ready to run the app with `npm run dev` command
 4. To run python bot put your tokens to `bot/.env` (use `bot/example.env` as an example). Then start the bot with `npm run bot` command
 
-## Configuration
+## Onboarding/Paywall configuration
 
 The heart of this project lies in the configuration. By tweaking the configuration file, you can customize the onboarding experience according to your project's requirements. The configuration file can be found at [config.ts](./app/src/config.ts).
 
 For detailed information on configuring the app, refer to the [Configuration Guide](./configuration-guide.md).
 
-# Integrate onboarding into your bot
+## Integrate onboarding into your bot
 Perfect location for onboarding is at the beginning of the flow, right after the user starts the bot. It will help you to brightly present your product to the user.
 
 To integrate onboarding to your bot, you simply need to add a **button** with a link of your deployed onboarding web application. Technically, there are 2 methods: [MenuButton](https://core.telegram.org/api/bots/menu) and [KeyboardButton](https://core.telegram.org/type/KeyboardButton).
