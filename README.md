@@ -55,6 +55,8 @@ MenuButton is a special button which appears on the left side of the text input 
 
 - Go to [@BotFather](https://t.me/BotFather) → `/mybots` → *Select yout bot* → `Bot Settings` → `Menu Button` → *Send your onboarding URL* → *Send button title (e.g. "Onboarding")*
 
+Now Menu Button with onboarding will appear in your bot.
+
 ### KeyboardButton
 Try KeyboardButton in action in our [Demo Bot](https://t.me/onboarding_kit_demo_bot). It utilizes Telegram's [KeyboardButton](https://core.telegram.org/type/KeyboardButton) with [Mini App URL](https://core.telegram.org/constructor/keyboardButtonSimpleWebView) inside.
 
