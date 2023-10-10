@@ -84,7 +84,7 @@ Good ending of onboarding is a **paywall**: User selects a product → Chooses p
    "payment_method": "wallet_pay"
 }
 ```
-This data is used for ivoice generation. We implemented 2 different payment methods: native [Telegram Payments](https://core.telegram.org/bots/payments) and [👛 Wallet Pay](https://pay.wallet.tg) (but generally any payment method can integrated into such flow). You can find full code in [bot.py](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py):
+This data is used for ivoice generation. We implemented 2 different payment methods: native [Telegram Payments](https://core.telegram.org/bots/payments) and [👛 Wallet Pay](https://pay.wallet.tg) (but generally any payment method can be integrated into such flow). You can find full code in [bot.py](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py):
 - Telegram Payments: [[send invoice]](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py#L201) • [[check payment status]](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py#L235)
 - 👛 Wallet Pay: [[send invoice]](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py#L245) • [[check payment status]](https://github.com/Easterok/telegram-onboarding-kit/blob/main/bot/bot.py#L326)
 
