@@ -44,7 +44,7 @@ export default defineConfig({
               type: 'number',
             },
           ],
-          button: 'Next',
+          button: 'Вперед',
         },
         // image
         {
